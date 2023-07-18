@@ -1,0 +1,13 @@
+
+  {
+    "name": "re-gifted-vande",
+    "version": "1.0.0",
+    "scripts": {
+      "build": "npm run setup:server",
+      "setup:app": "npm run setup:server && npm run setup:client",
+      "setup:client": "cd Re-Gifted-vande.client && npm i",
+      "setup:server": "cd Re-Gifted-vande && npm i",
+      "start": "node Re-Gifted-vande/index.js"
+    }
+  }
+  
