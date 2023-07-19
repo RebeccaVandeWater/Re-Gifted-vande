@@ -7,6 +7,16 @@ export const api = Axios.create({
   timeout: 8000
 })
 
+export const giphyApi = Axios.create({
+  baseURL: 'http://api.giphy.com/v1/gifs/search',
+  timeout: 8000,
+  params: {
+    api_key: '7pMTUBDWzFgqsq5tjM70cwdKZHBCCL3C',
+    rating: 'pg',
+    limit: 10,
+  }
+});
+
 api.interceptors.request.use(config => config, handleAxiosError)
 api.interceptors.response.use(response => response, handleAxiosError)
 
